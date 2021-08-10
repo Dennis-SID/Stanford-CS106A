@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3988c03b-6f6d-4bb3-a63a-5c701b6ea7fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/week2/dsidelnik/assignment2/Assignment2Part3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stanford CS 106A.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Stanford CS 106A.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/dsidelnik/assignment2/Assignment2Part2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/dsidelnik/assignment2/Assignment2Part2.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1wBrnQQQvF3jaaCyEXAka1JTvL4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/shpp-cs-java-lib.jar" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Courses\sh++\Second try\Stanford CS106A\Stanford CS 106A\static\mazes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Assignment2Part3">
+    <configuration name="Assignment1Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week1.dsidelnik.assignment1.Assignment1Part1" />
+      <module name="Stanford CS 106A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week1.dsidelnik.assignment1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Assignment1Part3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week1.dsidelnik.assignment1.Assignment1Part3" />
+      <module name="Stanford CS 106A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week1.dsidelnik.assignment1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Assignment1Part4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week1.dsidelnik.assignment1.Assignment1Part4" />
+      <module name="Stanford CS 106A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week1.dsidelnik.assignment1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Assignment2Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.dsidelnik.assignment2.Assignment2Part1" />
+      <module name="Stanford CS 106A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week2.dsidelnik.assignment2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Assignment2Part3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.dsidelnik.assignment2.Assignment2Part3" />
+      <module name="Stanford CS 106A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week2.dsidelnik.assignment2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Assignment2Part3" />
+        <item itemvalue="Application.Assignment2Part1" />
+        <item itemvalue="Application.Assignment1Part1" />
+        <item itemvalue="Application.Assignment1Part4" />
+        <item itemvalue="Application.Assignment1Part3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3988c03b-6f6d-4bb3-a63a-5c701b6ea7fd" name="Default Changelist" comment="" />
+      <created>1627942989149</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627942989149</updated>
+      <workItem from="1627942990419" duration="3673000" />
+      <workItem from="1628011821818" duration="6410000" />
+      <workItem from="1628021659631" duration="18000" />
+      <workItem from="1628465569928" duration="3850000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
