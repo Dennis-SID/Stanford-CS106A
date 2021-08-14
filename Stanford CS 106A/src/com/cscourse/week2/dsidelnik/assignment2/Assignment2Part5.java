@@ -1,4 +1,4 @@
-package com.shpp.p2p.cs.dsidelnik.assignment2;
+package week2.dsidelnik.assignment2;
 
 import acm.graphics.GRect;
 import com.shpp.cs.a.graphics.WindowProgram;

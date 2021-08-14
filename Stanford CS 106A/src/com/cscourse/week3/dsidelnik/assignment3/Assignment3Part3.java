@@ -2,6 +2,8 @@ package com.cscourse.week3.dsidelnik.assignment3;
 
 import com.shpp.cs.a.console.TextProgram;
 
+import java.util.Scanner;
+
 /**
  * <strong>Assignment3 Part3</strong>
  * <p>Returns the value of the first argument  raised to hte power of the second argument
@@ -15,7 +17,11 @@ import com.shpp.cs.a.console.TextProgram;
 public class Assignment3Part3 extends TextProgram {
 
     public void run() {
-        
+        int n;
+        try (Scanner scanner = new Scanner(System.in)) {
+            n = scanner.nextInt();
+        }
+        System.out.println(n = n < 0 ? -n : n);
     }
 
 

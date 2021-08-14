@@ -1,4 +1,4 @@
-package com.shpp.p2p.cs.dsidelnik.assignment2;
+package week2.dsidelnik.assignment2;
 
 import com.shpp.cs.a.console.TextProgram;
 
