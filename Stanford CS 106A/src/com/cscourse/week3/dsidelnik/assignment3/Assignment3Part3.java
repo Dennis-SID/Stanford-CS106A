@@ -50,7 +50,7 @@ public class Assignment3Part3 extends TextProgram {
      * @param exp exponent (power)
      * @return result of exponentiation
      */
-    private double raiseToPower(double base, int exp) {
+    public double raiseToPower(double base, int exp) {
         double result = base;
         int exponent = (exp < 0) ? -exp : exp; // check if exponent is negative
         if (exp == 0) return 1; // if exponent is 0 method returns 1

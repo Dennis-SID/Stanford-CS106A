@@ -1,126 +1,113 @@
 package com.cscourse.week3.dsidelnik.assignment3;
 
-import acm.graphics.GObject;
-import acm.graphics.GOval;
-import acm.graphics.GRect;
+import acm.graphics.*;
 import acm.util.RandomGenerator;
 import com.shpp.cs.a.graphics.WindowProgram;
 
 import java.awt.*;
-import java.util.Random;
-import java.util.Scanner;
 
-/*
-ANIMATION
-bouncing balls
-Idea: there are fixed quantity of balls on a screen with two different colors
-while they bounce to each other one ball gives color to another ball
+/**
+ * <b>Assignment3 Part6</b>
+ * <p>Program that draws animation keep track of time
+ * and terminate it implementation in established time
+ * implementation time as other parameters of the animation can
+ * be changed through adjusting code final variables</p>
  */
 public class Assignment3Part6 extends WindowProgram {
 
-    private static final Color CIRCLE_ONE_COLOR = Color.BLACK;
-    private static final Color CIRCLE_TWO_COLOR = Color.WHITE;
-
+    // used to set width of the borders in the window
     private static final double WINDOW_BORDER_WIDTH = 5.0;
+
     private static final int BALLS_NUMBER = 10;
     private static final double FRAMES_SECOND = 10.0;
 
     private static final double BALL_SIZE = 50.0;
 
+    // sets duration of the animation in milliseconds
+    private static final double ANIMATION_DURATION = 5000;
+
+    // Runnable interface used to create and start threads in run method
+    Runnable ballAnimation = this::ball;
+
+    /**
+     * Main action method that starts animation
+     * <p>Invokes drawAllBorder method then creates balls (separate thread for each one)
+     * number of balls and other connected parameters can be set in final variables
+     * keep track of time duration of the animation and after established time terminates the
+     * program implementation</p>
+     * <b>Uses <code>System.exit()</code> method to stop the program</b>
+     */
     public void run() {
 
         drawAllBorders();
+
         for (int i = 0; i < BALLS_NUMBER; i++) {
             new Thread(ballAnimation).start();
         }
-        double startTime = System.nanoTime() / 1000000000.0;
-        System.out.println("START TIME" + startTime);
-        while(true) {
-            if (( (System.nanoTime() / 1000000000) - startTime ) >= 5.0 ) System.exit(0);
-            System.out.println("Current TIME" + ((System.nanoTime() / 1000000000) - startTime));
+
+        long startTime = System.currentTimeMillis();
+        long timeElapsed = 0;
+        while (timeElapsed <= ANIMATION_DURATION) {
+            long currTime = System.currentTimeMillis();
+            timeElapsed = currTime - startTime;
+            System.out.println("Time elapsed " + timeElapsed); // time logging - used for program control purposes
         }
 
+        System.exit(0); // terminates program implementation
     }
 
-
-    Runnable blackCircle = () -> {
-        drawBlackCircle(Color.BLACK);
-    };
-    Runnable whiteCircle = () -> {
-        drawBlackCircle(Color.WHITE);
-    };
-    Runnable ballAnimation = this::ball;
-
-    private void drawBlackCircle(Color color) {
-        double radius = 0.0;
-        GOval circle = new GOval(radius, radius);
-        circle.setFilled(true);
-        circle.setFillColor(color);
-        circle.setColor(color);
-
-        while (true) {
-            radius = 0.0;
-            circle.setSize(radius, radius);
-            while (radius <= getWidth() * 2 && radius <= getHeight() * 2) {
-                circle.setSize(radius, radius);
-                add(circle, getWidth() / 2.0 - radius / 2, getHeight() / 2.0 - radius / 2);
-                radius += 10;
-                pause(50);
-            }
-        }
-    }
-
+    /**
+     * <b>Creates GObject type object</b>
+     * <p>sets it's border color, filled color, starting position
+     * on a screen and regulates wall collision behavior according to physics laws
+     * in a method number of frames of whole animation is defined
+     * number of frames per second can be changed in final variable <code>FRAMES_SECOND</code></p>
+     */
     private void ball() {
         RandomGenerator random = RandomGenerator.getInstance();
+        double minBallSpeed = 1.0;
+        double maxBallSpeed = 3.0;
+
         GOval ball = new GOval(BALL_SIZE, BALL_SIZE);
         ball.setFilled(true);
         ball.setFillColor(random.nextColor());
 
         add(ball, random.nextDouble(BALL_SIZE, getWidth() - BALL_SIZE),
                 random.nextDouble(BALL_SIZE, getHeight() - BALL_SIZE));
-        double directionX = random.nextDouble(1.0, 3.0);
-        double directionY = random.nextDouble(1.0, 3.0);
-        double secondInMinute = 60.0;
-        double ballX = ball.getX();
-        double ballY = ball.getY();
-
+        double directionX = random.nextDouble(minBallSpeed, maxBallSpeed);
+        double directionY = random.nextDouble(minBallSpeed, maxBallSpeed);
+        double secondInMinute = 60.0; // used to avoid magic numbers and bring more clarity into code
 
         while (true) {
             if (ball.getY() + BALL_SIZE > getHeight()) {
                 directionY = -directionY;
                 ball.setFillColor(Color.GREEN);
             } else if (ball.getY() < 0) {
-                directionY = random.nextDouble(1.0, 3.0);
+                directionY = random.nextDouble(minBallSpeed, maxBallSpeed);
                 ball.setFillColor(Color.RED);
             } else if (ball.getX() + BALL_SIZE >= getWidth()) {
                 directionX = -directionX;
                 ball.setFillColor(Color.YELLOW);
             } else if (ball.getX() <= 0) {
-                directionX = random.nextDouble(1.0, 3.0);
+                directionX = random.nextDouble(minBallSpeed, maxBallSpeed);
                 ball.setFillColor(Color.BLUE);
             }
-
-            /*if (getElementAt(ballX, ballY) != null) {
-                directionY = 1;
-            } else if (getElementAt(ballX, ballY + BALL_SIZE) != null) {
-                directionX = 1;
-            } else if (getElementAt(ballX + BALL_SIZE, ballY) != null) {
-                directionX = -1;
-            } else if (getElementAt(ballX + BALL_SIZE, ballY + BALL_SIZE) != null) {
-                directionY = -1;
-            }*/
-
 
             ball.move(directionX, directionY);
             pause(secondInMinute / FRAMES_SECOND);
         }
     }
 
-    private double randomDirection() {
-        Random random = new Random();
-        return random.nextInt(2) == 1 ? 1 : -1;
-    }
-
+    /**
+     * Draws a line which serves as a border of the screen
+     * used to draw borders on each side of the screen with particular width and color
+     *
+     * @param x      starting draw position an X coordinate axis
+     * @param y      starting draw position on Y coordinate axis
+     * @param width  sets width of the line
+     * @param height sets height of the line
+     * @param color  sets color of the line
+     */
     private void drawOneBorder(double x, double y, double width, double height, Color color) {
         GRect border = new GRect(x, y, width, height);
         border.setFilled(true);
@@ -130,6 +117,11 @@ public class Assignment3Part6 extends WindowProgram {
         add(border);
     }
 
+    /**
+     * <p>Using <code>drawOneBorder()</code> method draws fours borders
+     * on each side of the window</p>
+     * <p>Colors of the borders particularly defined in the method and can be changed there</p>
+     */
     private void drawAllBorders() {
 
         // draw bottom border
@@ -145,5 +137,4 @@ public class Assignment3Part6 extends WindowProgram {
         drawOneBorder(getWidth() - WINDOW_BORDER_WIDTH, WINDOW_BORDER_WIDTH, WINDOW_BORDER_WIDTH,
                 getHeight() - WINDOW_BORDER_WIDTH * 2, Color.YELLOW);
     }
-
 }
