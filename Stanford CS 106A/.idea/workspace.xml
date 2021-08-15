@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f233724-0f60-4abd-9913-446b9da71a76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +151,7 @@
       <workItem from="1628708764853" duration="70000" />
       <workItem from="1628710370801" duration="6648000" />
       <workItem from="1628874475643" duration="1964000" />
-      <workItem from="1628960197029" duration="14675000" />
+      <workItem from="1628960197029" duration="25431000" />
     </task>
     <servers />
   </component>
