@@ -68,6 +68,7 @@ public class Assignment3Part1 extends TextProgram {
      */
     private void cvHealth(List<Integer> dayTime) {
         List<Integer> filteredDays = dayTime.stream().filter(x -> x >= CV_EXERCISE_TIME).collect(Collectors.toList());
+        System.out.println("Cardiovascular health: ");
 
         if (filteredDays.size() >= CV_DAYS_NUMBER)
             System.out.println("Great job! You've done enough exercise for cardiovascular health.");
@@ -83,9 +84,10 @@ public class Assignment3Part1 extends TextProgram {
      */
     private void hpHealth(List<Integer> dayTime) {
         List<Integer> filteredDays = dayTime.stream().filter(x -> x >= HP_EXERCISE_TIME).collect(Collectors.toList());
+        System.out.println("Blood pressure: ");
 
-        if (filteredDays.size() >= HP_EXERCISE_TIME)
-            System.out.println("Great job! you've done enough exercise to keep a low bloo30d pressure.");
+        if (filteredDays.size() >= HP_DAYS_NUMBER)
+            System.out.println("Great job! you've done enough exercise to keep a low blood pressure.");
         else
             System.out.println("You needed to train hard for at least " + (HP_DAYS_NUMBER - filteredDays.size())
                     + " more day(s) a week!");
