@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f233724-0f60-4abd-9913-446b9da71a76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week4/dsidelnik/assignment4/Assignment4Part1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,20 +51,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.Assignment3Part6">
-    <configuration name="Assignment3Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cscourse.week3.dsidelnik.assignment3.Assignment3Part1" />
-      <module name="Stanford CS 106A" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cscourse.week3.dsidelnik.assignment3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Assignment4Part1">
     <configuration name="Assignment3Part2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cscourse.week3.dsidelnik.assignment3.Assignment3Part2" />
       <module name="Stanford CS 106A" />
@@ -117,24 +104,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="Assignment4Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cscourse.week4.dsidelnik.assignment4.Assignment4Part1" />
+      <module name="Stanford CS 106A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cscourse.week4.dsidelnik.assignment4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Assignment4Part1" />
         <item itemvalue="Application.Assignment3Part6" />
         <item itemvalue="Application.Assignment3Part5" />
         <item itemvalue="Application.Assignment3Part4" />
         <item itemvalue="Application.Assignment3Part2" />
-        <item itemvalue="Application.Assignment3Part1" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +154,8 @@
       <workItem from="1628874475643" duration="1964000" />
       <workItem from="1628960197029" duration="31879000" />
       <workItem from="1629065217422" duration="3000" />
-      <workItem from="1629137554996" duration="584000" />
+      <workItem from="1629137554996" duration="771000" />
+      <workItem from="1629138749517" duration="5109000" />
     </task>
     <servers />
   </component>
