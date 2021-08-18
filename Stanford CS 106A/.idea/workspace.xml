@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f233724-0f60-4abd-9913-446b9da71a76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week4/dsidelnik/assignment4/Assignment4Part1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week4/dsidelnik/assignment4/Assignment4Part1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week4/dsidelnik/assignment4/Assignment4Part1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week4/dsidelnik/assignment4/Assignment4Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week4/dsidelnik/assignment4/Assignment4Part1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +156,9 @@
       <workItem from="1628960197029" duration="31879000" />
       <workItem from="1629065217422" duration="3000" />
       <workItem from="1629137554996" duration="771000" />
-      <workItem from="1629138749517" duration="5109000" />
+      <workItem from="1629138749517" duration="5322000" />
+      <workItem from="1629309307651" duration="128000" />
+      <workItem from="1629317414093" duration="3260000" />
     </task>
     <servers />
   </component>
