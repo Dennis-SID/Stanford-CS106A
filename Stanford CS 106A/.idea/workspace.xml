@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f233724-0f60-4abd-9913-446b9da71a76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week4/dsidelnik/assignment4/Breakout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week1/dsidelnik/assignment1/Section1Task1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week1/dsidelnik/assignment1/Section1Task2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week4/dsidelnik/assignment4/Assignment4Part1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week4/dsidelnik/assignment4/Assignment4Part1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week4/dsidelnik/assignment4/Assignment4Part1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week4/dsidelnik/assignment4/Assignment4Part1.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,33 +53,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.Breakout">
-    <configuration name="Assignment3Part2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cscourse.week3.dsidelnik.assignment3.Assignment3Part2" />
-      <module name="Stanford CS 106A" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cscourse.week3.dsidelnik.assignment3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Assignment3Part4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cscourse.week3.dsidelnik.assignment3.Assignment3Part4" />
-      <module name="Stanford CS 106A" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cscourse.week3.dsidelnik.assignment3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Section1Task2">
     <configuration name="Assignment3Part5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cscourse.week3.dsidelnik.assignment3.Assignment3Part5" />
       <module name="Stanford CS 106A" />
@@ -119,24 +93,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="Section1Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cscourse.week1.dsidelnik.assignment1.Section1Task1" />
+      <module name="Stanford CS 106A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cscourse.week1.dsidelnik.assignment1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Section1Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cscourse.week1.dsidelnik.assignment1.Section1Task2" />
+      <module name="Stanford CS 106A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cscourse.week1.dsidelnik.assignment1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Section1Task2" />
+        <item itemvalue="Application.Section1Task1" />
         <item itemvalue="Application.Breakout" />
         <item itemvalue="Application.Assignment3Part6" />
         <item itemvalue="Application.Assignment3Part5" />
-        <item itemvalue="Application.Assignment3Part4" />
-        <item itemvalue="Application.Assignment3Part2" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +161,8 @@
       <workItem from="1629309307651" duration="128000" />
       <workItem from="1629317414093" duration="3260000" />
       <workItem from="1629575698772" duration="12000" />
-      <workItem from="1629818954125" duration="10571000" />
+      <workItem from="1629818954125" duration="11202000" />
+      <workItem from="1629836711892" duration="3529000" />
     </task>
     <servers />
   </component>
