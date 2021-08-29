@@ -66,7 +66,7 @@ public class Breakout extends WindowProgram {
     /**
      * Radius of the ball in pixels
      */
-    private static final int BALL_RADIUS = 10;
+    private static final int BALL_DIAMETER = 10;
 
     /**
      * Offset of the top brick row from the top
@@ -245,9 +245,9 @@ public class Breakout extends WindowProgram {
      * adds the ball on the middle of the screen
      */
     private GOval drawBall() {
-        double ballX = getWidth() / 2.0 - BALL_RADIUS / 2.0;
-        double ballY = getHeight() / 2.0 - BALL_RADIUS / 2.0;
-        GOval ball = new GOval(BALL_RADIUS, BALL_RADIUS);
+        double ballX = getWidth() / 2.0 - BALL_DIAMETER / 2.0;
+        double ballY = getHeight() / 2.0 - BALL_DIAMETER / 2.0;
+        GOval ball = new GOval(BALL_DIAMETER, BALL_DIAMETER);
         ball.setFilled(true);
         ball.setFillColor(Color.BLACK);
         ball.setVisible(true);
@@ -267,7 +267,7 @@ public class Breakout extends WindowProgram {
         ball.move(velocityX, velocityY);
 
         // Check for walls
-        if (ball.getX() - velocityX <= 0 && velocityX < 0 || (ball.getX() + velocityX >= (getWidth() - BALL_RADIUS * 2)
+        if (ball.getX() - velocityX <= 0 && velocityX < 0 || (ball.getX() + velocityX >= (getWidth() - BALL_DIAMETER * 2)
                 && velocityX > 0)) {
             velocityX = -velocityX;
         }
@@ -280,8 +280,8 @@ public class Breakout extends WindowProgram {
         if (collider == paddle) {
 
             // BALL_RADIUS / 2 - 1 needed to avoid slipping of the ball to the paddle
-            if (ball.getY() >= getHeight() - PADDLE_Y_OFFSET - BALL_RADIUS * 2 && ball
-                    .getY() < getHeight() - PADDLE_Y_OFFSET - BALL_RADIUS * 2 + (BALL_RADIUS / 2.0 - 1.0)) {
+            if (ball.getY() >= getHeight() - PADDLE_Y_OFFSET - BALL_DIAMETER * 2 && ball
+                    .getY() < getHeight() - PADDLE_Y_OFFSET - BALL_DIAMETER * 2 + (BALL_DIAMETER / 2.0 - 1.0)) {
                 velocityY = -velocityY;
             }
         }
@@ -306,12 +306,12 @@ public class Breakout extends WindowProgram {
 
         if ((getElementAt(ball.getX(), ball.getY())) != null) {
             return getElementAt(ball.getX(), ball.getY());
-        } else if (getElementAt((ball.getX() + BALL_RADIUS * 2), ball.getY()) != null) {
-            return getElementAt(ball.getX() + BALL_RADIUS * 2, ball.getY());
-        } else if (getElementAt(ball.getX(), (ball.getY() + BALL_RADIUS * 2)) != null) {
-            return getElementAt(ball.getX(), ball.getY() + BALL_RADIUS * 2);
-        } else if (getElementAt((ball.getX() + BALL_RADIUS * 2), (ball.getY() + BALL_RADIUS * 2)) != null) {
-            return getElementAt(ball.getX() + BALL_RADIUS * 2, ball.getY() + BALL_RADIUS * 2);
+        } else if (getElementAt((ball.getX() + BALL_DIAMETER * 2), ball.getY()) != null) {
+            return getElementAt(ball.getX() + BALL_DIAMETER * 2, ball.getY());
+        } else if (getElementAt(ball.getX(), (ball.getY() + BALL_DIAMETER * 2)) != null) {
+            return getElementAt(ball.getX(), ball.getY() + BALL_DIAMETER * 2);
+        } else if (getElementAt((ball.getX() + BALL_DIAMETER * 2), (ball.getY() + BALL_DIAMETER * 2)) != null) {
+            return getElementAt(ball.getX() + BALL_DIAMETER * 2, ball.getY() + BALL_DIAMETER * 2);
         }
 
         // returns null if there are no objects present
@@ -326,7 +326,6 @@ public class Breakout extends WindowProgram {
      */
     private Color defineColor(int rowNumber) {
         Color outputColor;
-
         switch (rowNumber) {
             case (0):
             case (1):
@@ -411,7 +410,7 @@ public class Breakout extends WindowProgram {
          */
         GLabel clickToStart = new GLabel("CLICK ON WINDOW TO START THE GAME");
         double labelX = getWidth() / 2.0 - clickToStart.getWidth() / 2.0;
-        double labelY = getHeight() / 2.0 + BALL_RADIUS * 2;
+        double labelY = getHeight() / 2.0 + BALL_DIAMETER * 2;
 
         clickToStart.setColor(Color.BLACK);
         clickToStart.setFont("Times New Roman-12");
