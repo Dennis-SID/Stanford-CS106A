@@ -2,61 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f233724-0f60-4abd-9913-446b9da71a76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/histogram/branches.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/histogram/countryside.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/histogram/family.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/histogram/map.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/histogram/masquerade.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/histogram/micro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/histogram/moon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/histogram/moon2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/histogram/overexposed.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/histogram/reflection.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/histogram/scenery.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/histogram/smoke.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/histogram/sources.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/histogram/western.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/histogram/zebras.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/matrices/bubbles.matrix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/matrices/diagonal.matrix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/matrices/diamond.matrix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/matrices/house.matrix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/matrices/karel.matrix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/matrices/note.matrix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/matrices/sun.matrix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/steganography/Attribution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/steganography/Karel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/steganography/Stegosaurus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/HistogramEqualization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/HistogramEqualizationImageTransforms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/HistogramEqualizationLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/HistogramEqualizationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/teest/ExceptionResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/teest/FailureResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/teest/ResultTypeHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/teest/SuccessResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/teest/TeestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/teest/TeestResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/teest/TeestRunnerPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/teest/TeestSuite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/teest/gui/ResultBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/teest/gui/TeestCaseRow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/hg/teest/gui/TeestPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/sg/Steganography.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/sg/SteganographyConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/sg/SteganographyDrawingCanvas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/sg/SteganographyLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/sg/SteganographyPictureCanvas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/tm/StdAudio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/tm/ToneMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/tm/ToneMatrixConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/tm/ToneMatrixDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/tm/ToneMatrixLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week6/dsidelnik/assignment6/tm/ToneMatrixWaveGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week5/dsidelnik/assignment5/Assignment5Part1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week5/dsidelnik/assignment5/Assignment5Part1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week5/dsidelnik/assignment5/Assignment5Part2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week5/dsidelnik/assignment5/Assignment5Part2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +116,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ToneMatrix" />
@@ -209,7 +168,7 @@
       <workItem from="1631032184591" duration="1214000" />
       <workItem from="1631033484348" duration="8402000" />
       <workItem from="1631386903929" duration="991000" />
-      <workItem from="1631390854582" duration="185000" />
+      <workItem from="1631390854582" duration="1172000" />
     </task>
     <servers />
   </component>
