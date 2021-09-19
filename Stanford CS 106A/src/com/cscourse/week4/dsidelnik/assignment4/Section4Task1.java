@@ -22,6 +22,7 @@ public class Section4Task1 extends WindowProgram {
         addMouseListeners();
     }
 
+
     public void mousePressed(MouseEvent e) {
         line = new GLine(e.getX(), e.getY(), e.getX(), e.getY());
         add(line);

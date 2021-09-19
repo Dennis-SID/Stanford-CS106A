@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f233724-0f60-4abd-9913-446b9da71a76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week4/dsidelnik/assignment4/Section4Task2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week6/dsidelnik/assignment6/tm/ToneMatrixLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week6/dsidelnik/assignment6/tm/ToneMatrixLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week7/dsidelnik/assignment7/NameSurfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week7/dsidelnik/assignment7/NameSurfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week7/dsidelnik/assignment7/NameSurferConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week7/dsidelnik/assignment7/NameSurferConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week7/dsidelnik/assignment7/NameSurferDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week7/dsidelnik/assignment7/NameSurferDataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week7/dsidelnik/assignment7/NameSurferEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week7/dsidelnik/assignment7/NameSurferEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week7/dsidelnik/assignment7/NameSurferGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week7/dsidelnik/assignment7/NameSurferGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week4/dsidelnik/assignment4/Section4Task1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week4/dsidelnik/assignment4/Section4Task1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week7/dsidelnik/assignment7/NameSurfer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week7/dsidelnik/assignment7/NameSurfer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week7/dsidelnik/assignment7/NameSurfer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week7/dsidelnik/assignment7/NameSurfer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week7/dsidelnik/assignment7/NameSurferDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week7/dsidelnik/assignment7/NameSurferDataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week7/dsidelnik/assignment7/NameSurferEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week7/dsidelnik/assignment7/NameSurferEntry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week4/dsidelnik/assignment4/Section4Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week4/dsidelnik/assignment4/Section4Task1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.NameSurfer">
+  <component name="RunManager" selected="Application.Section4Task2">
     <configuration name="Assignment3Part6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cscourse.week3.dsidelnik.assignment3.Assignment3Part6" />
       <module name="Stanford CS 106A" />
@@ -96,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Steganography" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cscourse.week6.dsidelnik.assignment6.sg.Steganography" />
+    <configuration name="Section4Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cscourse.week4.dsidelnik.assignment4.Section4Task1" />
       <module name="Stanford CS 106A" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cscourse.week6.dsidelnik.assignment6.sg.*" />
+          <option name="PATTERN" value="com.cscourse.week4.dsidelnik.assignment4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,26 +110,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ToneMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cscourse.week6.dsidelnik.assignment6.tm.ToneMatrix" />
+    <configuration name="Section4Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cscourse.week4.dsidelnik.assignment4.Section4Task2" />
       <module name="Stanford CS 106A" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cscourse.week6.dsidelnik.assignment6.tm.*" />
+          <option name="PATTERN" value="com.cscourse.week4.dsidelnik.assignment4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Section4Task2" />
+        <item itemvalue="Application.Section4Task1" />
         <item itemvalue="Application.NameSurfer" />
         <item itemvalue="Application.SandBox" />
         <item itemvalue="Application.Assignment3Part6" />
-        <item itemvalue="Application.ToneMatrix" />
-        <item itemvalue="Application.Steganography" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +181,7 @@
       <workItem from="1631828826886" duration="521000" />
       <workItem from="1631955616276" duration="3995000" />
       <workItem from="1631961714585" duration="16765000" />
-      <workItem from="1632077404475" duration="359000" />
+      <workItem from="1632077404475" duration="1985000" />
     </task>
     <servers />
   </component>
