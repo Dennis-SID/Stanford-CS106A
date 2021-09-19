@@ -45,4 +45,9 @@ public interface NameSurferConstants {
      */
     public static final int GRAPH_MARGIN_SIZE = 20;
 
+    /**
+     * The number of character in a text field
+     */
+    public static final int TEXT_FIELD_SIZE = 20;
+
 }

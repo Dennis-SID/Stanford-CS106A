@@ -9,10 +9,14 @@ package com.cscourse.week7.dsidelnik.assignment7;
  */
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class NameSurferEntry implements NameSurferConstants {
 
-	/* Constructor: NameSurferEntry(line) */
+    // stores name and it ranks on decades
+    String name;
+    List<Integer> yearRanks;
+
 
     /**
      * Creates a new NameSurferEntry from a data line as it appears
@@ -21,20 +25,34 @@ public class NameSurferEntry implements NameSurferConstants {
      * decade.
      */
     public NameSurferEntry(String line) {
-        // You fill this in //
+        List<String> temporaryList = parseLine(line);
+        name = getName(temporaryList);
+        yearRanks = getYears(temporaryList);
     }
 
-	/* Method: getName() */
+    /* Constructor helper method
+     * used to create NameSurferEntry object
+     * and assigns variables name as yearRank with data took from a database
+     */
+    private List<String> parseLine(String data) {return Arrays.asList(data.split(" "));}
+
+    private String getName(List<String> dataList) {return dataList.get(0).toLowerCase();}
+
+    /* removes data with a name and returns a list of years */
+    private List<Integer> getYears(List<String> dataList) {
+        List<String> processList = new ArrayList<>(dataList);
+        processList.remove(0);
+        return processList.stream().map(Integer::parseInt).collect(Collectors.toList());
+    }
+
 
     /**
      * Returns the name associated with this entry.
      */
     public String getName() {
-        // You need to turn this stub into a real implementation //
-        return null;
+        return name;
     }
 
-	/* Method: getRank(decade) */
 
     /**
      * Returns the rank associated with an entry for a particular
@@ -44,19 +62,16 @@ public class NameSurferEntry implements NameSurferConstants {
      * not appear in a decade, the rank value is 0.
      */
     public int getRank(int decade) {
-        // You need to turn this stub into a real implementation //
-        return 0;
+        return yearRanks.get(decade);
     }
 
-	/* Method: toString() */
 
     /**
      * Returns a string that makes it easy to see the value of a
      * NameSurferEntry.
      */
     public String toString() {
-        // You need to turn this stub into a real implementation //
-        return "";
+        return name + " " + yearRanks;
     }
 }
 

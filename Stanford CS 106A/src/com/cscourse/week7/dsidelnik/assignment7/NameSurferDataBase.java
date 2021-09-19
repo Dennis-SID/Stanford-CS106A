@@ -11,9 +11,14 @@ package com.cscourse.week7.dsidelnik.assignment7;
  * and "ERIC" are the same names.
  */
 
+import java.io.*;
+import java.util.HashMap;
+import java.util.Map;
+
 public class NameSurferDataBase implements NameSurferConstants {
 
-	/* Constructor: NameSurferDataBase(filename) */
+    // stores information read from a file
+    private final Map<String, NameSurferEntry> DATA_BASE;
 
     /**
      * Creates a new NameSurferDataBase and initializes it using the
@@ -21,11 +26,20 @@ public class NameSurferDataBase implements NameSurferConstants {
      * exception if the requested file does not exist or if an error
      * occurs as the file is being read.
      */
-    public NameSurferDataBase(String filename) {
-        // You fill this in //
+    public NameSurferDataBase() {
+        DATA_BASE = new HashMap<>();
+        try {
+            String line;
+            BufferedReader dataReader = new BufferedReader(new FileReader(NAMES_DATA_FILE));
+            while ((line = dataReader.readLine()) != null) {
+                NameSurferEntry entry = new NameSurferEntry(line);
+                DATA_BASE.put(entry.getName(), entry);
+            }
+        } catch (IOException e) {
+            System.out.println("That file does not exist! Please check the name of the file and try again");
+            e.printStackTrace();
+        }
     }
-	
-	/* Method: findEntry(name) */
 
     /**
      * Returns the NameSurferEntry associated with this name, if one
@@ -33,8 +47,18 @@ public class NameSurferDataBase implements NameSurferConstants {
      * method returns null.
      */
     public NameSurferEntry findEntry(String name) {
-        // You need to turn this stub into a real implementation //
-        return null;
+        return DATA_BASE.getOrDefault(name, null);
+    }
+
+    /**
+     * Getter method to encapsulate dataBase variable which stores name ad years data from a file
+     * ------------------------------------------------------------------------------------------
+     *                              Used in main NameSurfer class in
+     * ------------------------------------------------------------------------------------------
+     * @return HashMap instance variable "dataBase"
+     */
+    public Map<String, NameSurferEntry> getDATA_BASE() {
+        return DATA_BASE;
     }
 }
 
