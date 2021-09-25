@@ -24,7 +24,7 @@ public class Assignment3Part6 extends WindowProgram {
     private static final double BALL_SIZE = 50.0;
 
     // sets duration of the animation in milliseconds
-    private static final double ANIMATION_DURATION = 5000;
+    private static final double ANIMATION_DURATION = 7000;
 
     // Runnable interface used to create and start threads in run method
     Runnable ballAnimation = this::ball;
@@ -53,7 +53,7 @@ public class Assignment3Part6 extends WindowProgram {
             System.out.println("Time elapsed " + timeElapsed); // time logging - used for program control purposes
         }
 
-        System.exit(0); // terminates program implementation
+        /*System.exit(0); // terminates program implementation*/
     }
 
     /**
