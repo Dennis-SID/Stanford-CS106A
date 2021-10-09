@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f233724-0f60-4abd-9913-446b9da71a76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week8/dsidelnik/assignment8/Assignment8Part1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/EquationParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Evaluator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/OperatorPriorities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/tests/com/week3/dsidelnik/testassignment3/TestSection5Task1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/tests/com/week3/dsidelnik/testassignment3/TestSection5Task1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week3/dsidelnik/assignment3/Assignment3Part6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/com/week3/dsidelnik/testassignment3/TestSection5Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/com/week3/dsidelnik/testassignment3/TestSection5Task1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week8/dsidelnik/assignment8/SandBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -70,32 +71,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Assignment2Part5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week2.dsidelnik.assignment2.Assignment2Part5" />
-      <module name="Stanford CS 106A" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week2.dsidelnik.assignment2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Assignment2Part6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week2.dsidelnik.assignment2.Assignment2Part6" />
-      <module name="Stanford CS 106A" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week2.dsidelnik.assignment2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Assignment3Part6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cscourse.week3.dsidelnik.assignment3.Assignment3Part6" />
       <module name="Stanford CS 106A" />
@@ -112,6 +87,7 @@
     <configuration name="Assignment9Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cscourse.week9.dsidelnik.assignment9.Assignment9Part1" />
       <module name="Stanford CS 106A" />
+      <option name="PROGRAM_PARAMETERS" value="1+1+a+b a=2 b=3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cscourse.week9.dsidelnik.assignment9.*" />
@@ -122,24 +98,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="EquationParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cscourse.week9.dsidelnik.assignment9.EquationParser" />
+      <module name="Stanford CS 106A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cscourse.week9.dsidelnik.assignment9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SandBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cscourse.week9.dsidelnik.assignment9.SandBox" />
+      <module name="Stanford CS 106A" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;1+1&quot; &quot;a=2&quot; &quot;a=1&quot;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cscourse.week9.dsidelnik.assignment9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Assignment2Part4" />
+      <item itemvalue="Application.Assignment3Part6" />
+      <item itemvalue="Application.Assignment9Part1" />
+      <item itemvalue="Application.EquationParser" />
+      <item itemvalue="Application.SandBox" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Assignment9Part1" />
+        <item itemvalue="Application.SandBox" />
+        <item itemvalue="Application.EquationParser" />
         <item itemvalue="Application.Assignment3Part6" />
         <item itemvalue="Application.Assignment2Part4" />
-        <item itemvalue="Application.Assignment2Part5" />
-        <item itemvalue="Application.Assignment2Part6" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +197,10 @@
       <workItem from="1632552889890" duration="9163000" />
       <workItem from="1632586235356" duration="162000" />
       <workItem from="1632586431105" duration="345000" />
-      <workItem from="1632587225189" duration="5299000" />
+      <workItem from="1632587225189" duration="11276000" />
+      <workItem from="1632938513104" duration="206000" />
+      <workItem from="1633247750738" duration="14631000" />
+      <workItem from="1633780784611" duration="3572000" />
     </task>
     <servers />
   </component>

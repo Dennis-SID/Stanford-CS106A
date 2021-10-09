@@ -1,40 +1,68 @@
 package com.cscourse.week9.dsidelnik.assignment9;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Assignment9Part1 {
 
+    private Map<String, String> unknownValues;
+
     public static void main(String [] args) {
-        String forTest = "123456789+1+22-34";
-        Assignment9Part1 a9p1 = new Assignment9Part1();
-        System.out.println(a9p1.lineParser(forTest));
+
+        Assignment9Part1 assignment = new Assignment9Part1();
+        EquationParser parser = new EquationParser();
+
+        List<String> expression = parser.parseExpression(args[0]);
+
+        if (args.length > 1) {
+
+            String [] arr = new String[args.length - 1];
+            System.arraycopy(args, 1, arr, 0, args.length - 1);
+            assignment.unknownVariablesParser(arr);
+        }
+
+        for (String str : assignment.unknownValues.keySet()) System.out.println("Key: " + str + "Value: " +
+                assignment.unknownValues.get(str));
+
+        System.out.println(assignment.unknownValues);
+        System.out.println(expression);
+
+        List<String> resultList = assignment.valuesSubstitute(expression);
+        System.out.println(resultList);
     }
 
-    private double evaluator(String expression) {
+    public void unknownVariablesParser(String [] args) {
 
-        return 0.0;
-    }
+        EquationParser parser = new EquationParser();
+        unknownValues = new HashMap<>();
+        List<String> result;
+        StringBuilder sb;
+        String letter;
 
-    private List<String> lineParser(String line) {
-        char[] symbolsSeparated = line.toCharArray();
-        List<String> resultList = new ArrayList<>();
+        for (String str : args) {
 
+            if (str != null) {
+                result = parser.spaceRemove(str);
+                sb = new StringBuilder();
 
-        for (int i = 0; i < symbolsSeparated.length - 1; ) {
-            String currNumber = "";
-            if (Character.isDigit(symbolsSeparated[i])) {
-                while (Character.isDigit(symbolsSeparated[i]) && i < symbolsSeparated.length - 1) {
-                    currNumber += symbolsSeparated[i];
-                    i++;
-                }
-                resultList.add(currNumber);
-            } else {
-                resultList.add("" + symbolsSeparated[i]);
-                i++;
+                letter = result.get(0);
+                result.subList(0, 2).clear();
+
+                if (result.size() > 1) {
+                    for (String num : result) sb.append(num);
+                    unknownValues.put(letter, sb.toString());
+                } else unknownValues.put(letter, result.get(0));
             }
         }
+    }
+
+    public List<String> valuesSubstitute(List<String> values) {
+        List<String> resultList = new ArrayList<>();
+
+        for (String str : values)
+            resultList.add(unknownValues.getOrDefault(str, str));
+
         return resultList;
     }
+
+
 }
