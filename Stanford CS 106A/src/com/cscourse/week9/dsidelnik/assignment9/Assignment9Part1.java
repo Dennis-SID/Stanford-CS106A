@@ -8,26 +8,54 @@ public class Assignment9Part1 {
 
     public static void main(String [] args) {
 
+
+
         Assignment9Part1 assignment = new Assignment9Part1();
         EquationParser parser = new EquationParser();
+        Evaluator evaluator = new Evaluator();
+        Scanner scanner = new Scanner(System.in);
 
         List<String> expression = parser.parseExpression(args[0]);
 
         if (args.length > 1) {
-
             String [] arr = new String[args.length - 1];
             System.arraycopy(args, 1, arr, 0, args.length - 1);
             assignment.unknownVariablesParser(arr);
+            while (true) {
+                List<String> varExpression = new ArrayList<>(expression);
+                List<String> varSubExpression = assignment.valuesSubstitute(varExpression);
+                double result = evaluator.calculate(varSubExpression);
+                System.out.println("The result of expression will be: " + result);
+
+                System.out.println("Would you like to continue with another variables?");
+                String choice = scanner.next();
+                if (!choice.equalsIgnoreCase("y")) break;
+                assignment.changeVariables();
+            }
+        } else {
+
+            System.out.println(assignment.unknownValues);
+            System.out.println(expression);
+
+            List<String> resultList = assignment.valuesSubstitute(expression);
+            System.out.println(resultList);
+
+            double result = evaluator.calculate(resultList);
+            System.out.println(result);
         }
+    }
 
-        for (String str : assignment.unknownValues.keySet()) System.out.println("Key: " + str + "Value: " +
-                assignment.unknownValues.get(str));
+    public void changeVariables() {
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println(assignment.unknownValues);
-        System.out.println(expression);
-
-        List<String> resultList = assignment.valuesSubstitute(expression);
-        System.out.println(resultList);
+        if (unknownValues != null) {
+            for (String str : unknownValues.keySet()) {
+                System.out.print(str + "=");
+                String value = scanner.nextLine();
+                unknownValues.put(str, value);
+                System.out.println();
+            }
+        }
     }
 
     public void unknownVariablesParser(String [] args) {

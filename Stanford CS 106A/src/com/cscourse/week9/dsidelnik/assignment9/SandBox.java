@@ -6,123 +6,165 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.*;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class SandBox extends WindowProgram {
+    Map<String, Integer> operatorPriorities;
+
+    SandBox() {
+        operatorPriorities = new HashMap<>();
+        opPrFiller();
+    }
+
+    private void opPrFiller() {
+        operatorPriorities.put("^", 1);
+        operatorPriorities.put("*", 2);
+        operatorPriorities.put("/", 2);
+        operatorPriorities.put("+", 3);
+        operatorPriorities.put("-", 3);
+    }
+
+
+
     public static void main (String [] args) {
-        /*List<String> testList = new ArrayList<>();
-        testList.add("-");
-        testList.add("55.0");
-        testList.add("+");
-        testList.add("22.0");
-        testList.add("-");
-        testList.add("11.00");
-        testList.add("-");
-        testList.add("-");
-        testList.add("33.0");
-
         SandBox sandBox = new SandBox();
 
-        sandBox.negativeValueFinder(testList);
-        System.out.println(sandBox.negativeValueFinder(testList));*/
-        SandBox sandBox = new SandBox();
+        List<String> expression = Arrays.asList("1", "+", "2", "-", "3", "*", "4", "/", "5", "^", "6");
+        System.out.println(expression);
 
-       List<String> list = Arrays.asList("1", "+", "1");
-       System.out.println(sandBox.numberDetecting(list));
+        // creating stacks and shuffle it according to the first part of the algorithm
+        Stack<String> operators = new Stack<>();
+        Stack<String> numbers = new Stack<>();
 
+        sandBox.shuntingStacks(operators, numbers, expression);
+        System.out.println("shuntingStacks method implemented");
+        System.out.println("operators stack: " + operators);
+        System.out.println("numbers stack: " + numbers);
+
+        sandBox.shuntingYardSolver(numbers);
     }
 
-    public List<String> numberDetecting(List<String> list) {
-        List<String> resultList = new ArrayList<>();
-        StringBuilder operatorOperand;
-        for (int i = 0; i <= list.size() - 1; i++) {
-            operatorOperand = new StringBuilder();
+    private void shuntingStacks(Stack<String> operators, Stack<String> numbers, List<String> exp) {
+        List<String> expression = new ArrayList<>(exp);
+        String lastSymbol;
+        String retrievedSymbol;
+        int symbPriorityCurr, symbPriorityPrev;
 
-            if (isNumber(list.get(i))) {
-                while (isNumber(list.get(i))) {
-                    operatorOperand.append(list.get(i));
-                    i++;
-                    if (i == list.size()) break;
+
+        for (String str : expression) {
+
+            if (isOperator(str) && operators.isEmpty()) {
+                operators.push(str);
+                continue;
+            }
+
+            if (!isOperator(str)) {
+                numbers.push(str);
+            }
+
+            if (isOperator(str)) {
+
+                lastSymbol = operators.peek();
+                symbPriorityPrev = operatorPriorities.get(lastSymbol);
+                symbPriorityCurr = operatorPriorities.get(str);
+
+                if (symbPriorityPrev <= symbPriorityCurr) {
+                    while (true) {
+                        if (operators.isEmpty()) break;
+
+                        lastSymbol = operators.peek();
+                        symbPriorityPrev = operatorPriorities.get(lastSymbol);
+                        symbPriorityCurr = operatorPriorities.get(str);
+
+                        if (symbPriorityPrev <= symbPriorityCurr) {
+                            retrievedSymbol = operators.pop();
+                            numbers.push(retrievedSymbol);
+                        } else break;
+                    }
                 }
-                resultList.add(operatorOperand.toString());
-            }
-            if (i < list.size() - 1) {
-                if (isOperator(list.get(i))) {
-                    resultList.add(list.get(i));
-                }
+                    operators.push(str);
             }
 
+
         }
-        return resultList;
+        shuntingOpToNumber(operators, numbers);
     }
 
+    private double shuntingYardSolver(Stack<String> expression) {
+        List<String> expressionReversed;
+        Stack<String> expressionStack = new Stack<>();
+        Stack<String> operationStack = new Stack<>();
 
-    public Map<String, String> unknownValues;
+        expressionReversed = expression.stream().collect(Collectors.toList());
+        Collections.reverse(expressionReversed);
 
-    public void unknownVariablesParser(String [] args) {
-        EquationParser parser = new EquationParser();
-        unknownValues = new HashMap<String, String>();
-        List<String> result;
-        List<String> number;
-
-        for (String str : args) {
-            result = parser.spaceRemove((str));
-            StringBuilder sb = new StringBuilder();
-
-            number = new ArrayList<>(result);
-            number.remove(0);
-            number.remove(0);
-
-            if (number.size() > 1) {
-                for (String num : number) sb.append(num);
-                unknownValues.put(result.get(0), sb.toString());
-            } else unknownValues.put(result.get(0), number.get(0));
+        for (String str : expressionReversed) {
+            expressionStack.push(str);
         }
-    }
 
-    public List<String> valuesSubstitute(List<String> values) {
-        List<String> resultList = new ArrayList<>();
+        System.out.println("Operation stack: " + operationStack);
+        System.out.println("expression stack: " + expressionStack);
 
-        for (String str : values) {
-            if (unknownValues.containsKey(str)) {
-                resultList.add(unknownValues.get(str));
-            } else {
-                resultList.add(str);
+        while(!expressionStack.isEmpty()) {
+            System.out.println("loop started: ");
+            String currSymbol = expressionStack.peek();
+            System.out.println("Current symbol: " + currSymbol);
+
+            if (!isOperator(currSymbol)) {
+                operationStack.push(expressionStack.pop());
+            } else if (isOperator(currSymbol)) {
+                String secondOperand = operationStack.pop();
+                String firstOperand = operationStack.pop();
+                String operator = expressionStack.pop();
+                String result = mathOperation(firstOperand, operator, secondOperand);
+                System.out.println("first operand: " + firstOperand);
+                System.out.println("second operand: " + secondOperand);
+                System.out.println("Operator: " + operator);
+                System.out.println("Result: " + result);
+
+                operationStack.push(result);
             }
+            System.out.println("Operation stack: " + operationStack);
+            System.out.println("Expression stack: " + expressionStack);
+
         }
-        return resultList;
+
+        System.out.println("Operation stack: " + operationStack);
+        System.out.println("Expression stack: " + expressionStack);
+
+
+        return Double.parseDouble(operationStack.peek());
     }
 
-    public java.util.List<String> negativeValueFinder(java.util.List<String> expression) {
-        List<String> resultList = new ArrayList<>();
-        StringBuilder symbol;
-        boolean operator = true;
-
-        for (int i = 0; i < expression.size(); i++) {
-            symbol = new StringBuilder();
-
-            if (operator && isOperator(expression.get(i))) {
-                symbol.append(expression.get(i));
-                symbol.append(expression.get(++i));
-                operator = false;
-            } else if (!operator && isOperator(expression.get(i))) {
-                symbol.append(expression.get(i));
-                operator = true;
-            } else {
-                symbol.append(expression.get(i));
-                operator = false;
-            }
-
-            resultList.add(symbol.toString());
+    private void shuntingOpToNumber(Stack<String> operators, Stack<String> numbers) {
+        while (!operators.isEmpty()) {
+            String lastOperator = operators.pop();
+            numbers.push(lastOperator);
         }
-        return resultList;
-    }
-
-    private boolean isNumber(String symbol) {
-        char [] symbolAsChar = symbol.toCharArray();
-        return Character.isDigit(symbolAsChar[0]) || symbolAsChar[0] == '.';
     }
 
     private boolean isOperator(String symbol) {
-        return !isNumber(symbol);
+        List<String> operators = Arrays.asList("*", "^", "/", "+", "-");
+        return operators.contains(symbol);
+    }
+
+    public String mathOperation(String var1, String operator, String var2) {
+        double doubleVar1 = Double.parseDouble(var1);
+        double doubleVar2 = Double.parseDouble(var2);
+        double result = 0.0;
+
+        switch(operator) {
+            case "+" : result = doubleVar1 + doubleVar2;
+                       break;
+            case "-" : result = doubleVar1 - doubleVar2;
+                       break;
+            case "/" :  if (doubleVar2 > 0) result = doubleVar1 / doubleVar2;
+            else result = 0.0;
+                       break;
+            case "*" : result = doubleVar1 * doubleVar2;
+                       break;
+            case "^" : result = Math.pow(doubleVar1, doubleVar2);
+        }
+        return String.valueOf(result);
     }
 }

@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f233724-0f60-4abd-9913-446b9da71a76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/EquationParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Evaluator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/OperatorPriorities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/com/week3/dsidelnik/testassignment3/TestAssignment9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week8/dsidelnik/assignment8/SandBox.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/OperatorPriorities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/OperatorPriorities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/SandBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/SandBox.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Evaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Evaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/OperatorPriorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/OperatorPriorities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/SandBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/SandBox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +89,7 @@
     <configuration name="Assignment9Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cscourse.week9.dsidelnik.assignment9.Assignment9Part1" />
       <module name="Stanford CS 106A" />
-      <option name="PROGRAM_PARAMETERS" value="1+1+a+b a=2 b=3" />
+      <option name="PROGRAM_PARAMETERS" value="-1+-1+a+b a=-2 b=-3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cscourse.week9.dsidelnik.assignment9.*" />
@@ -200,7 +202,7 @@
       <workItem from="1632587225189" duration="11276000" />
       <workItem from="1632938513104" duration="206000" />
       <workItem from="1633247750738" duration="14631000" />
-      <workItem from="1633780784611" duration="3572000" />
+      <workItem from="1633780784611" duration="22231000" />
     </task>
     <servers />
   </component>
