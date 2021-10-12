@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f233724-0f60-4abd-9913-446b9da71a76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tests/com/week3/dsidelnik/testassignment3/TestAssignment9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week8/dsidelnik/assignment8/Section1Part1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/OperatorPriorities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/OperatorPriorities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/SandBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/SandBox.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Evaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Evaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/OperatorPriorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/OperatorPriorities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/SandBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/SandBox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,15 +120,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -203,6 +194,7 @@
       <workItem from="1632938513104" duration="206000" />
       <workItem from="1633247750738" duration="14631000" />
       <workItem from="1633780784611" duration="22231000" />
+      <workItem from="1633979425456" duration="1888000" />
     </task>
     <servers />
   </component>
