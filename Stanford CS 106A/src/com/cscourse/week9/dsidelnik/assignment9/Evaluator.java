@@ -1,18 +1,27 @@
 package com.cscourse.week9.dsidelnik.assignment9;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
+/**
+ * Evaluates expression
+ *
+ * <p> Assumes that expression already parsed (spaces are removed,
+ * multi numbers and negative numbers already defined) and ready for further calculations</p>
+ */
 public class Evaluator {
 
+    // Store values of operator priorities, needed to implement post fix calculations algorithm
     private Map<String, Integer> operatorPriorities;
-
 
     public Evaluator() {
         operatorPriorities = new HashMap<>();
         operatorMapFiller();
     }
 
+    /**
+     * Fills map with priority values
+     * should be invoked before calculations
+     */
     private void operatorMapFiller() {
         operatorPriorities.put("^", 1);
         operatorPriorities.put("*", 2);
@@ -21,20 +30,28 @@ public class Evaluator {
         operatorPriorities.put("-", 3);
     }
 
-
+    /**
+     * Method that composes shunting yard algorithm methods and returns result
+     * of calculations
+     * @param expression parsed epxression
+     * @return solution
+     */
     public double calculate (List<String> expression) {
-        /*EquationParser parser = new EquationParser();*/
         Stack<String> operators = new Stack<>();
         Stack<String> postfixExpression = new Stack<>();
-
-        /*List<String> expression = parser.parseExpression(formula);*/
-        /*expression = varSubst(expression, variables);*/
 
         shuntingStacks(operators, postfixExpression, expression);
 
         return shuntingYardSolver(postfixExpression);
     }
 
+    /**
+     * turns infix notation expression to the postfix notation expression
+     * for further calculations
+     * @param operators stack for operators
+     * @param numbers stack for numbers
+     * @param exp  parsed expression
+     */
     private void shuntingStacks(Stack<String> operators, Stack<String> numbers, List<String> exp) {
         List<String> expression = new ArrayList<>(exp);
         String lastSymbol;
@@ -81,25 +98,26 @@ public class Evaluator {
         shuntingOpToNumber(operators, numbers);
     }
 
+    /**
+     * Chunting yard algorith main logic
+     * @param postfixExpression already processed postfix epxression
+     * @return double values (solution of expression)
+     */
     private double shuntingYardSolver(Stack<String> postfixExpression) {
         List<String> expressionReversed;
         Stack<String> expressionStack = new Stack<>();
         Stack<String> operationStack = new Stack<>();
 
-        expressionReversed = postfixExpression.stream().collect(Collectors.toList());
+        expressionReversed = new ArrayList<>(postfixExpression);
         Collections.reverse(expressionReversed);
 
         for (String str : expressionReversed) {
             expressionStack.push(str);
         }
 
-        System.out.println("Operation stack: " + operationStack);
-        System.out.println("postfixExpression stack: " + expressionStack);
 
         while(!expressionStack.isEmpty()) {
-            System.out.println("loop started: ");
             String currSymbol = expressionStack.peek();
-            System.out.println("Current symbol: " + currSymbol);
 
             if (!isOperator(currSymbol)) {
                 operationStack.push(expressionStack.pop());
@@ -108,25 +126,20 @@ public class Evaluator {
                 String firstOperand = operationStack.pop();
                 String operator = expressionStack.pop();
                 String result = mathOperation(firstOperand, operator, secondOperand);
-                System.out.println("first operand: " + firstOperand);
-                System.out.println("second operand: " + secondOperand);
-                System.out.println("Operator: " + operator);
-                System.out.println("Result: " + result);
-
                 operationStack.push(result);
             }
-            System.out.println("Operation stack: " + operationStack);
-            System.out.println("Expression stack: " + expressionStack);
-
         }
-
-        System.out.println("Operation stack: " + operationStack);
-        System.out.println("Expression stack: " + expressionStack);
-
-
         return Double.parseDouble(operationStack.peek());
     }
 
+    /**
+     * Helper method used, part of shunting yard algorithm implementation,
+     * gets two Stack variables and makes manipulations (gets all operators from one stack and puts it to another
+     * until first gets empty)
+     * gets reference to both stack variables and changes it without return value
+     * @param operators stack which stored generally operators
+     * @param numbers stack which generally stored only numbers
+     */
     private void shuntingOpToNumber(Stack<String> operators, Stack<String> numbers) {
         while (!operators.isEmpty()) {
             String lastOperator = operators.pop();
@@ -134,15 +147,14 @@ public class Evaluator {
         }
     }
 
-    private List<String> varSubst(List<String> expression, Map<String, String> variables) {
-        List<String> resultList = new ArrayList<>();
-
-        for (String str : expression)
-            resultList.add(variables.getOrDefault(str, str));
-
-        return resultList;
-    }
-
+    /**
+     * Depending of operator performs following math operation (addition, subtraction, multiplication, division,
+     * and exponentiation) return following result as String variable
+     * @param var1 first operand
+     * @param operator operator
+     * @param var2 second operand
+     * @return result value of math operation as a String variable
+     */
     public String mathOperation(String var1, String operator, String var2) {
         double doubleVar1 = Double.parseDouble(var1);
         double doubleVar2 = Double.parseDouble(var2);
@@ -163,6 +175,11 @@ public class Evaluator {
         return String.valueOf(result);
     }
 
+    /**
+     * Helper method, created to make the code more user friendly
+     * @param symbol String carables which needed to be analyzed
+     * @return if String variable is operator returns true, else false
+     */
     private boolean isOperator(String symbol) {
         List<String> operators = new ArrayList<>(Arrays.asList("+", "-", "*", "^", "/"));
         return operators.contains(symbol);

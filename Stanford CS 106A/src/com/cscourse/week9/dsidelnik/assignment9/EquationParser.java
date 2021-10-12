@@ -1,9 +1,13 @@
 package com.cscourse.week9.dsidelnik.assignment9;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Parse expression
+ * Defines single values, also negative and double values and turns it in to list
+ * of separate String type variables to further it calculations
+ */
 public class EquationParser {
 
 
@@ -14,6 +18,12 @@ public class EquationParser {
         return expression;
     }
 
+    /**
+     * Takes expression as String line
+     * divide it in to separate variables and removes spaces
+     * @param line string typed line (expression)
+     * @return list of String type variables for further calculations
+     */
     public List<String> spaceRemove(String line) {
         char [] lineAsChar = line.toCharArray();
         List<String> resultList = new ArrayList<>();
@@ -23,6 +33,11 @@ public class EquationParser {
         return resultList;
     }
 
+    /**
+     * Method used to find multi numbers in expression
+     * @param list list of String type variables, assumes that spaces already removed
+     * @return list with separate multi numbers
+     */
     public List<String> numberDetecting(List<String> list) {
         List<String> resultList = new ArrayList<>();
         StringBuilder operatorOperand;
@@ -47,6 +62,12 @@ public class EquationParser {
         return resultList;
     }
 
+    /**
+     * defines negative numbers in expression
+     * @param expression list of String type variables, assumes that spaces already removed
+     *                   and multi numbers are defined
+     * @return list with separate negative values
+     */
     public List<String> negativeValueFinder(List<String> expression) {
         List<String> resultList = new ArrayList<>();
         StringBuilder symbol;
@@ -72,28 +93,23 @@ public class EquationParser {
         return resultList;
     }
 
+    /**
+     * Helper method, used to define whether symbol is number or not
+     * Used to distinguish numbers, operators etc.
+     * @param symbol String variables which needed to be analyzed
+     * @return if number returns true, else false
+     */
     private boolean isNumber(String symbol) {
         char [] symbolAsChar = symbol.toCharArray();
         return Character.isDigit(symbolAsChar[0]) || symbolAsChar[0] == '.' || Character.isLetter(symbolAsChar[0]);
     }
 
+    /**
+     * Uses isNumber method. Created to make code more user friendly
+     * @param symbol String variable to analyze
+     * @return if variables is operator returns true, else false
+     */
     private boolean isOperator(String symbol) {
         return !isNumber(symbol);
-    }
-
-
-
-    public static void main(String [] args) {
-        EquationParser parser = new EquationParser();
-        String line = "-199999.0 +   -1+  -4222.21    -3111.98 + -2333.03 - -222.055";
-        System.out.println(parser.spaceRemove(line));
-        List<String> listToCheck = parser.spaceRemove(line);
-        for (String str : listToCheck) System.out.print(str);
-        System.out.println("\n");
-        List<String> multiNumberDetected = parser.numberDetecting(listToCheck);
-        for (String str : multiNumberDetected) System.out.print(str + " ");
-        System.out.println("");
-        List<String> negativeNumbers = parser.negativeValueFinder(multiNumberDetected);
-        for (String str : negativeNumbers) System.out.print(str + " ");
     }
 }
