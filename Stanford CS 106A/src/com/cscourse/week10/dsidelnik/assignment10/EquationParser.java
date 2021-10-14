@@ -1,19 +1,18 @@
-package com.cscourse.week9.dsidelnik.assignment9;
+package com.cscourse.week10.dsidelnik.assignment10;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-/**
- * Parse expression
- * Defines single values, also negative and double values and turns it in to list
- * of separate String type variables to further it calculations
- */
 public class EquationParser {
-
 
     public List<String> parseExpression(String line) {
         List<String> expression = spaceRemove(line);
+        System.out.println("Expression after space remove:   " + expression);
+        expression = comaToDot(expression);
+        System.out.println("Expression after coma to dot changes:   " + expression);
         expression = numberDetecting(expression);
+        System.out.println("Expression after multinumbers detected:   " + expression);
         expression = negativeValueFinder(expression);
         return expression;
     }
@@ -25,11 +24,17 @@ public class EquationParser {
      * @return list of String type variables for further calculations
      */
     public List<String> spaceRemove(String line) {
-        char [] lineAsChar = line.toCharArray();
-        List<String> resultList = new ArrayList<>();
+        String withoutSpaces = line.replaceAll(" ", "");
+        String [] tokens = withoutSpaces.split("");
+        return Arrays.asList(tokens);
+    }
 
-        for (char ch : lineAsChar)
-            if (ch != ' ') resultList.add(String.valueOf(ch));
+    public List<String> comaToDot(List<String> list) {
+        List<String> resultList = new ArrayList<>();
+        for (String token : list) {
+            if (token.equals(",")) resultList.add(".");
+            else resultList.add(token);
+        }
         return resultList;
     }
 
@@ -52,12 +57,11 @@ public class EquationParser {
                 }
                 resultList.add(operatorOperand.toString());
             }
-            if (i < list.size() - 1) {
-                if (isOperator(list.get(i))) {
+            if (i < list.size()) {
+                if (isOperator(list.get(i)) || isParenthesis(list.get(i))) {
                     resultList.add(list.get(i));
                 }
             }
-
         }
         return resultList;
     }
@@ -70,25 +74,26 @@ public class EquationParser {
      */
     public List<String> negativeValueFinder(List<String> expression) {
         List<String> resultList = new ArrayList<>();
-        StringBuilder symbol;
-        boolean operator = true;
+        boolean prevIsOperator = true;
+        StringBuilder token;
 
         for (int i = 0; i < expression.size(); i++) {
-            symbol = new StringBuilder();
-
-            if (operator && isOperator(expression.get(i))) {
-                symbol.append(expression.get(i));
-                symbol.append(expression.get(++i));
-                operator = false;
-            } else if (!operator && isOperator(expression.get(i))) {
-                symbol.append(expression.get(i));
-                operator = true;
+            token = new StringBuilder();
+            if (prevIsOperator && isOperator(expression.get(i))) {
+                token.append(expression.get(i));
+                token.append(expression.get(++i));
+                prevIsOperator = false;
+            } else if (!prevIsOperator && isOperator(expression.get(i))) {
+                token.append(expression.get(i));
+                prevIsOperator = true;
+            } else if (expression.get(i).equals("(")) {
+                token.append(expression.get(i));
+                prevIsOperator = true;
             } else {
-                symbol.append(expression.get(i));
-                operator = false;
+                token.append(expression.get(i));
+                prevIsOperator = false;
             }
-
-            resultList.add(symbol.toString());
+            resultList.add(token.toString());
         }
         return resultList;
     }
@@ -109,7 +114,12 @@ public class EquationParser {
      * @param symbol String variable to analyze
      * @return if variables is operator returns true, else false
      */
-    public boolean isOperator(String symbol) {
-        return "+-*/^".contains(symbol);
+    private boolean isOperator(String symbol) {
+        List<String> operators = Arrays.asList("+", "-", "/", "^", "*");
+        return operators.contains(symbol);
+    }
+
+    private boolean isParenthesis(String symbol) {
+        return symbol.equals(")") || symbol.equals("(");
     }
 }
