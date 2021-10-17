@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f233724-0f60-4abd-9913-446b9da71a76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week10/dsidelnik/assignment10/Assignment10Part1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week10/dsidelnik/assignment10/EquationParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week10/dsidelnik/assignment10/Evaluator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week10/dsidelnik/assignment10/SandBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week8/dsidelnik/assignment8/Section1Part2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/EquationParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/EquationParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Evaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Evaluator.java" afterDir="false" />
@@ -60,7 +54,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.SandBox">
+  <component name="RunManager" selected="Application.Assignment9Part1">
     <configuration name="Assignment10Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cscourse.week10.dsidelnik.assignment10.Assignment10Part1" />
       <module name="Stanford CS 106A" />
@@ -77,7 +71,7 @@
     <configuration name="Assignment9Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cscourse.week9.dsidelnik.assignment9.Assignment9Part1" />
       <module name="Stanford CS 106A" />
-      <option name="PROGRAM_PARAMETERS" value="100^2+100^2" />
+      <option name="PROGRAM_PARAMETERS" value="100^2+100^2+-1*-1--1/-1+a a=2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cscourse.week9.dsidelnik.assignment9.*" />
@@ -148,13 +142,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,11 +165,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Assignment9Part1" />
         <item itemvalue="Application.SandBox" />
         <item itemvalue="Application.SandBox (1)" />
         <item itemvalue="Application.Section1Part2" />
         <item itemvalue="Application.Assignment10Part1" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +222,8 @@
       <workItem from="1633979425456" duration="7543000" />
       <workItem from="1634071877390" duration="197000" />
       <workItem from="1634133578643" duration="35000" />
-      <workItem from="1634148444758" duration="18499000" />
+      <workItem from="1634148444758" duration="19097000" />
+      <workItem from="1634461269255" duration="1280000" />
     </task>
     <servers />
   </component>

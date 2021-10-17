@@ -11,10 +11,10 @@ import java.util.*;
 public class Evaluator {
 
     // Store values of operator priorities, needed to implement post fix calculations algorithm
-    private Map<String, Integer> operatorPriorities;
+    private final Map<String, Integer> OPERATOR_PRIORITIES;
 
     public Evaluator() {
-        operatorPriorities = new HashMap<>();
+        OPERATOR_PRIORITIES = new HashMap<>();
         operatorMapFiller();
     }
 
@@ -23,11 +23,11 @@ public class Evaluator {
      * should be invoked before calculations
      */
     private void operatorMapFiller() {
-        operatorPriorities.put("^", 1);
-        operatorPriorities.put("*", 2);
-        operatorPriorities.put("/", 2);
-        operatorPriorities.put("+", 3);
-        operatorPriorities.put("-", 3);
+        OPERATOR_PRIORITIES.put("^", 1);
+        OPERATOR_PRIORITIES.put("*", 2);
+        OPERATOR_PRIORITIES.put("/", 2);
+        OPERATOR_PRIORITIES.put("+", 3);
+        OPERATOR_PRIORITIES.put("-", 3);
     }
 
     /**
@@ -76,16 +76,16 @@ public class Evaluator {
             if (parser.isOperator(str)) {
 
                 lastSymbol = operators.peek();
-                symbPriorityPrev = operatorPriorities.get(lastSymbol);
-                symbPriorityCurr = operatorPriorities.get(str);
+                symbPriorityPrev = OPERATOR_PRIORITIES.get(lastSymbol);
+                symbPriorityCurr = OPERATOR_PRIORITIES.get(str);
 
                 if (symbPriorityPrev <= symbPriorityCurr) {
                     while (true) {
                         if (operators.isEmpty()) break;
 
                         lastSymbol = operators.peek();
-                        symbPriorityPrev = operatorPriorities.get(lastSymbol);
-                        symbPriorityCurr = operatorPriorities.get(str);
+                        symbPriorityPrev = OPERATOR_PRIORITIES.get(lastSymbol);
+                        symbPriorityCurr = OPERATOR_PRIORITIES.get(str);
 
                         if (symbPriorityPrev <= symbPriorityCurr) {
                             retrievedSymbol = operators.pop();
@@ -102,7 +102,7 @@ public class Evaluator {
     }
 
     /**
-     * Chunting yard algorith main logic
+     * Shunting yard algorithm main logic
      *
      * @param postfixExpression already processed postfix epxression
      * @return double values (solution of expression)
@@ -173,7 +173,7 @@ public class Evaluator {
                 result = Double.parseDouble(var1) - Double.parseDouble(var2);
                 break;
             case "/":
-                if (Double.parseDouble(var2) > 0) result = Double.parseDouble(var1) / Double.parseDouble(var2);
+                if (Double.parseDouble(var2) != 0) result = Double.parseDouble(var1) / Double.parseDouble(var2);
                 else throw new ArithmeticException();
                 break;
             case "*":
