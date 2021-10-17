@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f233724-0f60-4abd-9913-446b9da71a76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/tests/com/week3/dsidelnik/testassignment3/TestAssignment10Part1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Assignment9Part1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/EquationParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/EquationParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Evaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/Evaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week10/dsidelnik/assignment10/Assignment10Part1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week10/dsidelnik/assignment10/Assignment10Part1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week10/dsidelnik/assignment10/EquationParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week10/dsidelnik/assignment10/EquationParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week10/dsidelnik/assignment10/Evaluator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week10/dsidelnik/assignment10/Evaluator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week10/dsidelnik/assignment10/SandBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week9/dsidelnik/assignment9/SandBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week10/dsidelnik/assignment10/Assignment10Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week10/dsidelnik/assignment10/Assignment10Part1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week10/dsidelnik/assignment10/EquationParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week10/dsidelnik/assignment10/EquationParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week10/dsidelnik/assignment10/Evaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week10/dsidelnik/assignment10/Evaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week10/dsidelnik/assignment10/SandBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week9/dsidelnik/assignment9/SandBox.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +58,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Assignment9Part1">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cscourse.week10.dsidelnik.assignment10" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestAssignment10Part1">
     <configuration name="Assignment10Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cscourse.week10.dsidelnik.assignment10.Assignment10Part1" />
       <module name="Stanford CS 106A" />
@@ -90,32 +103,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cscourse.week8.dsidelnik.assignment8.Main" />
-      <module name="Stanford CS 106A" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cscourse.week8.dsidelnik.assignment8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SandBox (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cscourse.week10.dsidelnik.assignment10.SandBox" />
-      <module name="Stanford CS 106A" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cscourse.week10.dsidelnik.assignment10.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SandBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cscourse.week9.dsidelnik.assignment9.SandBox" />
       <module name="Stanford CS 106A" />
@@ -129,12 +116,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Section1Part2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cscourse.week8.dsidelnik.assignment8.Section1Part2" />
+    <configuration name="SandBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cscourse.week10.dsidelnik.assignment10.SandBox" />
       <module name="Stanford CS 106A" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cscourse.week8.dsidelnik.assignment8.*" />
+          <option name="PATTERN" value="com.cscourse.week10.dsidelnik.assignment10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAssignment10Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.com.week3.dsidelnik.testassignment3.TestAssignment10Part1" />
+      <module name="Stanford CS 106A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.com.week3.dsidelnik.testassignment3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,19 +157,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Assignment9Part1" />
-      <item itemvalue="Application.Section1Part2" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Assignment10Part1" />
       <item itemvalue="Application.SandBox (1)" />
       <item itemvalue="Application.SandBox" />
+      <item itemvalue="Application.TestAssignment10Part1" />
+      <item itemvalue="Application.Assignment10Part1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestAssignment10Part1" />
+        <item itemvalue="Application.Assignment10Part1" />
+        <item itemvalue="Application.SandBox (1)" />
         <item itemvalue="Application.Assignment9Part1" />
         <item itemvalue="Application.SandBox" />
-        <item itemvalue="Application.SandBox (1)" />
-        <item itemvalue="Application.Section1Part2" />
-        <item itemvalue="Application.Assignment10Part1" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +222,7 @@
       <workItem from="1634071877390" duration="197000" />
       <workItem from="1634133578643" duration="35000" />
       <workItem from="1634148444758" duration="19097000" />
-      <workItem from="1634461269255" duration="1280000" />
+      <workItem from="1634461269255" duration="19503000" />
     </task>
     <servers />
   </component>
