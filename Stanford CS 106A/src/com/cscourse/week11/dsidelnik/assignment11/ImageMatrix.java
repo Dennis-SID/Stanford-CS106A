@@ -26,7 +26,7 @@ public class ImageMatrix {
      * @param image input image
      * @return image as pixel matrix
      */
-    private Color[][] createColorMatrix(BufferedImage image) {
+    public Color[][] createColorMatrix(BufferedImage image) {
         Color[][] imageColorMatrix = new Color[image.getHeight()][image.getWidth()];
 
         for (int height = 0; height < image.getHeight(); height++) {
@@ -44,7 +44,7 @@ public class ImageMatrix {
      *
      * @param colorMatrix two dimensional array
      */
-    private void pixelConnectionMaker(Color[][] colorMatrix) {
+    public void pixelConnectionMaker(Color[][] colorMatrix) {
         imageMatrix = new Node[colorMatrix.length][colorMatrix[0].length];
         for (int height = 0; height < colorMatrix.length; height++) {
             for (int width = 0; width < colorMatrix[0].length; width++) {
