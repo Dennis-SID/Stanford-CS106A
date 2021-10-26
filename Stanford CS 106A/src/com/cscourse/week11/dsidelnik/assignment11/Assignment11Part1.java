@@ -3,53 +3,38 @@ package com.cscourse.week11.dsidelnik.assignment11;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.awt.image.ColorModel;
 import java.io.File;
 import java.io.IOException;
 
 public class Assignment11Part1 {
 
-    public static Color[][] imageMatrix;
-
-    public static void main(String [] args) {
-        String filePath = "assets/test4.jpg";
-        if (args.length > 0) filePath = args[0];
+    public static void main(String[] args) {
+        String filePath = "assets/test1.jpg";
+        if (args.length > 0) filePath = "assets/" + args[0];
 
         try {
+            // reads image
             BufferedImage image = ImageIO.read(new File(filePath));
-            ColorModel model = image.getColorModel();
+            ImageAnalyzer imageAnalyzer = new ImageAnalyzer();
 
+            //makes pixel graph
             ImageMatrix imageMatrix = new ImageMatrix(image);
             Node[][] nodes = imageMatrix.getNodes();
-            System.out.println("The nodes is : " + nodes);
-            System.out.println("Nodes height:  " + nodes.length);
-            System.out.println("Nodes width:  " + nodes[0].length);
-            System.out.println("Nodes first element:  " + nodes[0][0]);
-            System.out.println("Nodes first element red color:  " + nodes[0][0].getRedColor());
-            System.out.println("Nodes first element is visited:  " + nodes[0][0].isVisited());
-            nodes[0][0].setAsVisited();
-            System.out.println("Nodes first element is visited: " + nodes[0][0].isVisited());
+            Node[][] blackWhiteNodes = imageMatrix.blackAndWhiteMaker(nodes);
 
-            if (model.hasAlpha()) {
+            // output size of image to user
+            // defines background color of the image
+            System.out.println("Image height: " + blackWhiteNodes.length + " Image width: " + blackWhiteNodes[0].length);
+            Color bgColor = imageAnalyzer.getBgColor(blackWhiteNodes);
 
-            }
-
-           /* imageMatrix = new Color[image.getHeight()][image.getWidth()];
-            System.out.println(imageMatrix[0][0]);*/
-
-            /*for (int height = 0; height < image.getHeight(); height++) {
-                for (int width = 0; width < image.getWidth(); width++) {
-                    imageMatrix[height][width] = new Color(image.getRGB(width, height));
-                }
-            }
-*/
-
+            // defines number of silhouettes on a picture and make output for user
+            int numberOfSils = imageAnalyzer.silhouettesCounter(blackWhiteNodes, bgColor);
+            System.out.println("THE NUMBER OF SILHOUETTES WERE FOUND ON A PICTURE IS(ARE) ===== " + numberOfSils + " =====");
 
         } catch (IOException e) {
+
             System.out.println("Something went wrong on the reading stage");
             e.printStackTrace();
         }
-
-
     }
 }
