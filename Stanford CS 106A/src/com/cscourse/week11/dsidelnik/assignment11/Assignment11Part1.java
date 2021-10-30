@@ -9,7 +9,7 @@ import java.io.IOException;
 public class Assignment11Part1 {
 
     public static void main(String[] args) {
-        String filePath = "assets/test1.jpg";
+        String filePath = "assets/imgs/tst_40.jpg";
         if (args.length > 0) filePath = "assets/" + args[0];
 
         try {

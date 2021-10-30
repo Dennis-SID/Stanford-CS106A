@@ -58,12 +58,14 @@ public class ImageAnalyzer {
      * @param node    yet unvisited node with the same color
      * @param bgColor background color
      */
+    public static int counter = 0;
     public void DFS(Node node, Color bgColor) {
         node.setAsVisited();
         List<Node> neighbours = node.getConnectedNodes();
 
         for (Node neighbourNode : neighbours) {
             if (!neighbourNode.isVisited() && !neighbourNode.getColor().equals(bgColor)) {
+                counter++;
                 DFS(neighbourNode, bgColor);
             }
         }
@@ -85,8 +87,11 @@ public class ImageAnalyzer {
                     imageMatrix[height][width].setAsVisited();
                 } else if (!imageMatrix[height][width].getColor().equals(bgColor) &&
                         !imageMatrix[height][width].isVisited()) {
+                    counter = 0;
                     DFS(imageMatrix[height][width], bgColor);
-                    silCounter++;
+                    if (counter > 300) {
+                        silCounter++;
+                    }
                 }
             }
         }

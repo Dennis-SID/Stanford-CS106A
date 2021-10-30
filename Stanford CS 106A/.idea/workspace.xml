@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f233724-0f60-4abd-9913-446b9da71a76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tests/com/week3/dsidelnik/testassignment3/TestAssignment11Part1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week11/dsidelnik/assignment11/memoryoptimized/SilhouettesCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/com/week3/dsidelnik/testassignment3/TestAssignment11Part1MemoryOpt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week11/dsidelnik/assignment11/Assignment11Part1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week11/dsidelnik/assignment11/Assignment11Part1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week11/dsidelnik/assignment11/ImageMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week11/dsidelnik/assignment11/ImageMatrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week11/dsidelnik/assignment11/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week11/dsidelnik/assignment11/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week11/dsidelnik/assignment11/ImageMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week11/dsidelnik/assignment11/ImageMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week11/dsidelnik/assignment11/ImageAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week11/dsidelnik/assignment11/ImageAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/tests/com/week3/dsidelnik/testassignment3/TestAssignment11Part1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/tests/com/week3/dsidelnik/testassignment3/TestAssignment11Part1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week11/dsidelnik/assignment11/Assignment11Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week11/dsidelnik/assignment11/Assignment11Part1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week11/dsidelnik/assignment11/ImageAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week11/dsidelnik/assignment11/ImageAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/com/week3/dsidelnik/testassignment3/TestAssignment11Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/com/week3/dsidelnik/testassignment3/TestAssignment11Part1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,42 +65,14 @@
       <recent name="com.cscourse.week10.dsidelnik.assignment10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestAssignment11Part1">
-    <configuration name="Assignment10Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cscourse.week10.dsidelnik.assignment10.Assignment10Part1" />
-      <module name="Stanford CS 106A" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cscourse.week10.dsidelnik.assignment10.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TestAssignment11Part1MemoryOpt">
     <configuration name="Assignment11Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cscourse.week11.dsidelnik.assignment11.Assignment11Part1" />
+      <option name="MAIN_CLASS_NAME" value="com.cscourse.week11.dsidelnik.assignment11.memoryoptimized.Assignment11Part1" />
       <module name="Stanford CS 106A" />
-      <option name="PROGRAM_PARAMETERS" value="test.png" />
-      <option name="VM_PARAMETERS" value="-Xss16m" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;assets/test1.jpg&quot;" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cscourse.week11.dsidelnik.assignment11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Assignment9Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cscourse.week9.dsidelnik.assignment9.Assignment9Part1" />
-      <module name="Stanford CS 106A" />
-      <option name="PROGRAM_PARAMETERS" value="100^2+100^2+-1*-1--1/-1+a a=2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cscourse.week9.dsidelnik.assignment9.*" />
+          <option name="PATTERN" value="com.cscourse.week11.dsidelnik.assignment11.memoryoptimized.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +88,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SandBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cscourse.week10.dsidelnik.assignment10.SandBox" />
+    <configuration name="SilhouettesCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cscourse.week11.dsidelnik.assignment11.memoryoptimized.SilhouettesCounter" />
       <module name="Stanford CS 106A" />
+      <option name="VM_PARAMETERS" value="-Xss16m" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cscourse.week10.dsidelnik.assignment10.*" />
+          <option name="PATTERN" value="com.cscourse.week11.dsidelnik.assignment11.memoryoptimized.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,6 +129,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestAssignment11Part1MemoryOpt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.com.week3.dsidelnik.testassignment3.TestAssignment11Part1MemoryOpt" />
+      <module name="Stanford CS 106A" />
+      <option name="VM_PARAMETERS" value="-Xss16m" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.com.week3.dsidelnik.testassignment3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -165,19 +155,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Assignment9Part1" />
       <item itemvalue="Application.TestAssignment10Part1" />
-      <item itemvalue="Application.Assignment10Part1" />
-      <item itemvalue="Application.Assignment11Part1" />
       <item itemvalue="Application.TestAssignment11Part1" />
+      <item itemvalue="Application.SilhouettesCounter" />
+      <item itemvalue="Application.Assignment11Part1" />
+      <item itemvalue="Application.TestAssignment11Part1MemoryOpt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestAssignment11Part1MemoryOpt" />
+        <item itemvalue="Application.Assignment11Part1" />
+        <item itemvalue="Application.SilhouettesCounter" />
         <item itemvalue="Application.TestAssignment11Part1" />
         <item itemvalue="Application.Assignment11Part1" />
-        <item itemvalue="Application.TestAssignment10Part1" />
-        <item itemvalue="Application.Assignment10Part1" />
-        <item itemvalue="Application.Assignment9Part1" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +225,10 @@
       <workItem from="1634588406032" duration="1972000" />
       <workItem from="1635101265003" duration="10898000" />
       <workItem from="1635273587836" duration="9780000" />
-      <workItem from="1635284564185" duration="2174000" />
+      <workItem from="1635284564185" duration="2834000" />
+      <workItem from="1635449055858" duration="3945000" />
+      <workItem from="1635536935627" duration="148000" />
+      <workItem from="1635616411090" duration="11473000" />
     </task>
     <servers />
   </component>
@@ -249,6 +242,11 @@
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/com/week3/dsidelnik/testassignment3/TestAssignment11Part1.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
