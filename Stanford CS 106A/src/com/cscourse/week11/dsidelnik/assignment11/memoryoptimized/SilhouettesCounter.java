@@ -154,7 +154,8 @@ public class SilhouettesCounter {
     }
 
     /* takes the biggest silhouette on an image and finds noise (garbage) size using
-     * coefficient (10% by default) */
+     * coefficient (10% by default)
+     */
     private int garbageSizeDefiner(ArrayList<Integer> silhouettesSizes) {
         int biggestSilhouette = 0;
 
