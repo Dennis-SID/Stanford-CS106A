@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f233724-0f60-4abd-9913-446b9da71a76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week12/dsidelnik/assignment12/Pixel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/com/week3/dsidelnik/testassignment3/TestAssignment12Part1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week13/dsidelnik/assignment13/Archiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week13/dsidelnik/assignment13/Assignment13Part1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cscourse/week13/dsidelnik/assignment13/SandBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/test1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week11/dsidelnik/assignment11/memoryoptimized/SilhouettesCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week11/dsidelnik/assignment11/memoryoptimized/SilhouettesCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week12/dsidelnik/assignment12/Assignment12Part1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week12/dsidelnik/assignment12/Assignment12Part1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week12/dsidelnik/assignment12/Assignment12Part1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week12/dsidelnik/assignment12/Assignment12Part1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week12/dsidelnik/assignment12/SilhouettesCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stanford CS 106A/com/cscourse/week12/dsidelnik/assignment12/SilhouettesCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week11/dsidelnik/assignment11/memoryoptimized/SilhouettesCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week11/dsidelnik/assignment11/memoryoptimized/SilhouettesCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week12/dsidelnik/assignment12/Assignment12Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week12/dsidelnik/assignment12/Assignment12Part1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cscourse/week12/dsidelnik/assignment12/SilhouettesCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cscourse/week12/dsidelnik/assignment12/SilhouettesCounter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,12 +61,38 @@
       <recent name="com.cscourse.week10.dsidelnik.assignment10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestAssignment12Part1">
+  <component name="RunManager" selected="Application.SandBox">
     <configuration name="Assignment12Part1" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cscourse.week12.dsidelnik.assignment12.Assignment12Part1" />
       <module name="Stanford CS 106A" />
       <option name="PROGRAM_PARAMETERS" value="assets/test.jpg" />
       <option name="VM_PARAMETERS" value="-Xss256m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Assignment13Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cscourse.week13.dsidelnik.assignment13.Assignment13Part1" />
+      <module name="Stanford CS 106A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cscourse.week13.dsidelnik.assignment13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SandBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cscourse.week13.dsidelnik.assignment13.SandBox" />
+      <module name="Stanford CS 106A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cscourse.week13.dsidelnik.assignment13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,9 +125,13 @@
     <list>
       <item itemvalue="Application.Assignment12Part1" />
       <item itemvalue="Application.TestAssignment12Part1" />
+      <item itemvalue="Application.Assignment13Part1" />
+      <item itemvalue="Application.SandBox" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SandBox" />
+        <item itemvalue="Application.Assignment13Part1" />
         <item itemvalue="Application.TestAssignment12Part1" />
       </list>
     </recent_temporary>
@@ -179,6 +201,9 @@
       <workItem from="1635879590039" duration="5269000" />
       <workItem from="1636048840720" duration="388000" />
       <workItem from="1636099361088" duration="3900000" />
+      <workItem from="1636477050762" duration="4844000" />
+      <workItem from="1637019831797" duration="890000" />
+      <workItem from="1637620527988" duration="3356000" />
     </task>
     <servers />
   </component>
